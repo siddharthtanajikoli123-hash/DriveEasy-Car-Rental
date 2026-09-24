@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveEasy | Book Your Car</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-car"></i>
+            Drive<span>Easy</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="booking.html" class="active">Book Now</a></li>
+            <li><a href="marketing.html">Digital Marketing</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <a href="cars.html" class="nav-btn">Browse Cars</a>
+
+    </nav>
+
+
+    <!-- BOOKING SECTION -->
+
+    <section class="booking-section">
+
+        <div class="booking-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="booking-info">
+
+                <p class="small-title">
+                    EASY & FAST BOOKING
+                </p>
+
+                <h1>
+                    Book Your <span>Dream Car</span>
+                </h1>
+
+                <p>
+                    Choose your favourite car, select the number
+                    of rental days and get ready to drive!
+                </p>
+
+
+                <div class="booking-benefits">
+
+                    <div>
+                        <i class="fa-solid fa-car"></i>
+                        <span>Wide Range of Cars</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Affordable Daily Prices</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-calculator"></i>
+                        <span>Automatic Price Calculation</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Safe & Secure Booking</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOOKING FORM -->
+
+            <div class="booking-form">
+
+                <h2>Car Rental Booking</h2>
+
+<!-- OFFER APPLIED MESSAGE -->
+
+<div id="offerBox" class="offer-box">
+
+    <i class="fa-solid fa-gift"></i>
+
+    <span id="offerText"></span>
+
+</div>                
+
+                <form id="bookingForm">
+
+                    <!-- NAME -->
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label>Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- MOBILE -->
+
+                    <div class="form-group">
+
+                        <label>Mobile Number</label>
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            placeholder="Enter your mobile number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- SELECT CAR -->
+
+                    <div class="form-group">
+
+                        <label>Select Car</label>
+
+                        <select id="car" required>
+
+                            <option value="">
+                                -- Select Your Car --
+                            </option>
+
+                            <option value="5000">
+                                BMW 5 Series - ₹5000 / Day
+                            </option>
+
+                            <option value="6000">
+                                Mercedes Benz C-Class - ₹6000 / Day
+                            </option>
+
+                            <option value="8000">
+                                Porsche 911 - ₹8000 / Day
+                            </option>
+
+                            <option value="7000">
+                                Range Rover - ₹7000 / Day
+                            </option>
+
+                            <option value="5500">
+                                Audi A6 - ₹5500 / Day
+                            </option>
+
+                            <option value="7500">
+                                BMW 7 Series - ₹7500 / Day
+                            </option>
+
+                            <option value="9000">
+                                Mercedes S-Class - ₹9000 / Day
+                            </option>
+
+                            <option value="4500">
+                                Toyota Fortuner - ₹4500 / Day
+                            </option>
+
+                            <option value="2500">
+                                Hyundai Creta - ₹2500 / Day
+                            </option>
+
+                            <option value="3500">
+                                Tata Harrier - ₹3500 / Day
+                            </option>
+
+                            <option value="4000">
+                                Mahindra XUV700 - ₹4000 / Day
+                            </option>
+
+                            <option value="3800">
+                                Jeep Compass - ₹3800 / Day
+                            </option>
+
+                            <option value="8500">
+                                BMW M4 - ₹8500 / Day
+                            </option>
+
+                            <option value="12000">
+                                Audi R8 - ₹12000 / Day
+                            </option>
+
+                            <option value="9500">
+                                Ford Mustang - ₹9500 / Day
+                            </option>
+
+                            <option value="10000">
+                                Porsche Cayenne - ₹10000 / Day
+                            </option>
+
+                            <option value="2200">
+                                Hyundai Verna - ₹2200 / Day
+                            </option>
+
+                            <option value="2300">
+                                Honda City - ₹2300 / Day
+                            </option>
+
+                            <option value="1500">
+                                Maruti Suzuki Swift - ₹1500 / Day
+                            </option>
+
+                            <option value="2000">
+                                Tata Nexon - ₹2000 / Day
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- NUMBER OF DAYS -->
+
+                    <div class="form-group">
+
+                        <label>How Many Days?</label>
+
+                        <input
+                            type="number"
+                            id="days"
+                            placeholder="Enter number of rental days"
+                            min="1"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- RENTAL PERIOD -->
+
+<div class="form-group">
+
+    <label>Rental Period</label>
+
+    <input
+        type="text"
+        id="rentalPeriod"
+        value="Select rental days"
+        readonly
+    >
+
+</div>
+
+
+                    <!-- PRICE PER DAY -->
+
+                    <div class="form-group">
+
+                        <label>Price Per Day</label>
+
+                        <input
+                            type="text"
+                            id="pricePerDay"
+                            value="₹0"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- TOTAL AMOUNT -->
+
+                    <div class="form-group">
+
+                        <label>Total Rent</label>
+
+                        <input
+                            type="text"
+                            id="totalAmount"
+                            value="₹0"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <!-- PAYMENT METHOD -->
+
+                    <div class="form-group">
+
+                        <label>Payment Method</label>
+
+                        <select id="paymentMethod" required>
+
+                            <option value="">
+                                -- Select Payment Method --
+                            </option>
+
+                            <option value="Online Payment">
+                                Online Payment
+                            </option>
+
+                            <option value="Cash">
+                                Cash Payment
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- BOOK BUTTON -->
+
+                    <button type="submit" class="booking-btn">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                        Confirm Booking
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

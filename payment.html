@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveEasy | Payment</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-car"></i>
+            Drive<span>Easy</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="marketing.html">Digital Marketing</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <a href="cars.html" class="nav-btn">Browse Cars</a>
+
+    </nav>
+
+
+    <!-- PAYMENT SECTION -->
+
+    <section class="payment-section">
+
+        <div class="payment-container">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="payment-info">
+
+                <p class="small-title">SECURE PAYMENT</p>
+
+                <h1>
+                    Complete Your <span>Payment</span>
+                </h1>
+
+                <p>
+                    Choose your preferred payment method
+                    and complete your car rental booking securely.
+                </p>
+
+
+                <div class="payment-features">
+
+                    <div>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>100% Secure Payment</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Your Information is Safe</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Instant Booking Confirmation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PAYMENT BOX -->
+
+            <div class="payment-box">
+                <!-- BOOKING SUMMARY -->
+
+<div class="booking-summary">
+
+    <h2>Booking Summary</h2>
+
+    <div class="summary-item">
+        <span>Name:</span>
+        <strong id="summaryName">-</strong>
+    </div>
+
+    <div class="summary-item">
+        <span>Car:</span>
+        <strong id="summaryCar">-</strong>
+    </div>
+
+    <div class="summary-item">
+        <span>Rental Days:</span>
+        <strong id="summaryDays">-</strong>
+    </div>
+
+    <div class="summary-item">
+    <span>Rental Period:</span>
+    <strong id="summaryRentalPeriod">-</strong>
+</div>
+
+    <div class="summary-item">
+        <span>Price Per Day:</span>
+        <strong id="summaryPrice">-</strong>
+    </div>
+
+    <div class="summary-total">
+        <span>Total Amount:</span>
+        <strong id="summaryTotal">₹0</strong>
+    </div>
+
+</div>
+
+                <h2>Choose Payment Method</h2>
+
+
+                <!-- PAYMENT OPTIONS -->
+
+                <div class="payment-options">
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="Card"
+                            checked
+                        >
+
+                        <span>
+                            <i class="fa-solid fa-credit-card"></i>
+                            Credit / Debit Card
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="UPI"
+                        >
+
+                        <span>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            UPI Payment
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="Net Banking"
+                        >
+
+                        <span>
+                            <i class="fa-solid fa-building-columns"></i>
+                            Net Banking
+                        </span>
+
+                    </label>
+
+
+                    <label class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="Cash"
+                        >
+
+                        <span>
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            Pay at Office
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- PAYMENT FORMS -->
+
+<!-- CARD PAYMENT -->
+
+<div class="payment-form" id="cardPayment">
+
+    <div class="form-group">
+
+        <label>Card Holder Name</label>
+
+        <input
+            type="text"
+            id="cardName"
+            placeholder="Enter card holder name"
+        >
+
+    </div>
+
+
+    <div class="form-group">
+
+        <label>Card Number</label>
+
+        <input
+            type="text"
+            id="cardNumber"
+            placeholder="1234 5678 9012 3456"
+        >
+
+    </div>
+
+
+    <div class="payment-row">
+
+        <div class="form-group">
+
+            <label>Expiry Date</label>
+
+            <input
+                type="text"
+                id="expiry"
+                placeholder="MM / YY"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>CVV</label>
+
+            <input
+                type="password"
+                id="cvv"
+                placeholder="***"
+            >
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- UPI PAYMENT -->
+
+<div class="payment-form payment-hidden" id="upiPayment">
+
+    <div class="form-group">
+
+        <label>UPI ID</label>
+
+        <input
+            type="text"
+            id="upiId"
+            placeholder="example@upi"
+        >
+
+    </div>
+
+    <p class="payment-message">
+        Enter your UPI ID to complete the payment.
+    </p>
+
+</div>
+
+
+<!-- NET BANKING -->
+
+<div class="payment-form payment-hidden" id="bankPayment">
+
+    <div class="form-group">
+
+        <label>Select Your Bank</label>
+
+        <select id="bankName">
+
+            <option value="">
+                -- Select Bank --
+            </option>
+
+            <option>State Bank of India</option>
+            <option>HDFC Bank</option>
+            <option>ICICI Bank</option>
+            <option>Axis Bank</option>
+            <option>Bank of Baroda</option>
+
+        </select>
+
+    </div>
+
+    <p class="payment-message">
+        You will be redirected securely to your bank.
+    </p>
+
+</div>
+
+
+<!-- CASH PAYMENT -->
+
+<div class="payment-form payment-hidden" id="cashPayment">
+
+    <p class="payment-message cash-message">
+
+        <i class="fa-solid fa-money-bill-wave"></i>
+
+        Please pay the rental amount at our DriveEasy office.
+
+    </p>
+
+</div>
+
+<!-- PAYMENT BUTTON -->
+
+<button class="pay-btn" id="payButton">
+
+    <i class="fa-solid fa-lock"></i>
+
+    Pay Securely
+
+</button>
+
+
+<p class="secure-text">
+
+    <i class="fa-solid fa-shield-halved"></i>
+
+    Your payment information is secure and protected.
+
+</p>
+
+   </div>
+
+   </div>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

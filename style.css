@@ -1,0 +1,1510 @@
+/* ================================
+   DRIVE EASY - PREMIUM DARK THEME
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0d0d0d;
+    border-bottom: 1px solid #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.logo span {
+    color: #ff7a00;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ff7a00;
+}
+
+.nav-btn {
+    text-decoration: none;
+    background: #ff7a00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 120px 8% 70px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 8, 8, 0.98) 20%,
+            rgba(8, 8, 8, 0.65) 60%,
+            rgba(8, 8, 8, 0.25)
+        ),
+        url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #ff7a00;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ff7a00;
+}
+
+.hero-text {
+    color: #c5c5c5;
+    line-height: 1.8;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 55px;
+}
+
+.primary-btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ff7a00;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #555;
+    color: white;
+    padding: 13px 24px;
+    border-radius: 6px;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+    display: flex;
+    gap: 50px;
+}
+
+.stat h2 {
+    font-size: 28px;
+    color: #ff7a00;
+}
+
+.stat p {
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* ================= SECTIONS ================= */
+
+.how,
+.featured-cars,
+.marketing {
+    padding: 100px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title p {
+    color: #ff7a00;
+    font-size: 13px;
+    letter-spacing:
+}
+
+/* Fix car image size */
+
+.car-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ================================
+   CARS PAGE FIX
+================================ */
+
+/* Cars page header */
+.cars-page-header {
+    padding: 130px 8% 40px;
+    text-align: center;
+    background: #080808;
+}
+
+.cars-page-header > p:first-child {
+    color: #ff7a00;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cars-page-header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.cars-page-header h1 span {
+    color: #ff7a00;
+}
+
+.header-text {
+    color: #aaaaaa;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Search bar */
+.car-search-section {
+    padding: 20px 8% 40px;
+    background: #080808;
+}
+
+.search-box {
+    max-width: 600px;
+    margin: auto;
+    background: #151515;
+    border: 1px solid #333;
+    padding: 12px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box i {
+    color: #ff7a00;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+/* All cars section */
+.all-cars {
+    padding: 70px 8%;
+    background: #0d0d0d;
+}
+
+/* 3 cars in one row */
+.all-cars .cars-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Car image */
+.all-cars .car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .all-cars .cars-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .all-cars .cars-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =================================
+   BOOKING PAGE
+================================= */
+
+.booking-section {
+    min-height: 100vh;
+    padding: 130px 8% 70px;
+    background: #080808;
+}
+
+.booking-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* LEFT SIDE */
+
+.booking-info .small-title {
+    color: #ff7a00;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.booking-info h1 {
+    font-size: 45px;
+    margin: 15px 0;
+    color: white;
+}
+
+.booking-info h1 span {
+    color: #ff7a00;
+}
+
+.booking-info > p {
+    color: #aaaaaa;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+
+/* BENEFITS */
+
+.booking-benefits {
+    margin-top: 30px;
+}
+
+.booking-benefits div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 18px 0;
+    color: white;
+}
+
+.booking-benefits i {
+    color: #ff7a00;
+    font-size: 20px;
+}
+
+
+/* BOOKING FORM */
+
+.booking-form {
+    background: #151515;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #2a2a2a;
+}
+
+.booking-form h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #dddddd;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    background: #0d0d0d;
+    border: 1px solid #333;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #ff7a00;
+}
+
+
+/* BUTTON */
+
+.booking-btn {
+    width: 100%;
+    padding: 14px;
+    background: #ff7a00;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.booking-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .booking-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .booking-info {
+        text-align: center;
+    }
+
+    .booking-info > p {
+        margin: auto;
+    }
+
+    .booking-benefits div {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .booking-section {
+        padding: 110px 5% 50px;
+    }
+
+    .booking-info h1 {
+        font-size: 34px;
+    }
+
+    .booking-form {
+        padding: 22px;
+    }
+
+}
+/* =================================
+   PAYMENT PAGE
+================================= */
+
+.payment-section {
+    min-height: 100vh;
+    padding: 130px 8% 70px;
+    background: #080808;
+}
+
+.payment-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+
+.payment-info .small-title {
+    color: #ff7a00;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.payment-info h1 {
+    font-size: 45px;
+    color: white;
+    margin: 15px 0;
+}
+
+.payment-info h1 span {
+    color: #ff7a00;
+}
+
+.payment-info > p {
+    color: #aaaaaa;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+/* FEATURES */
+
+.payment-features {
+    margin-top: 30px;
+}
+
+.payment-features div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 18px 0;
+    color: white;
+}
+
+.payment-features i {
+    color: #ff7a00;
+    font-size: 20px;
+}
+
+
+/* PAYMENT BOX */
+
+.payment-box {
+    background: #151515;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #2a2a2a;
+}
+
+.payment-box > h2 {
+    color: white;
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+
+/* BOOKING SUMMARY */
+
+.booking-summary {
+    background: #0d0d0d;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.booking-summary h2 {
+    color: #ff7a00;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.summary-item,
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #dddddd;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.summary-item strong {
+    color: white;
+}
+
+.summary-total {
+    border-bottom: none;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.summary-total strong {
+    color: #ff7a00;
+    font-size: 20px;
+}
+
+
+/* PAYMENT OPTIONS */
+
+.payment-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.payment-option {
+    background: #0d0d0d;
+    border: 1px solid #333;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.payment-option:hover {
+    border-color: #ff7a00;
+}
+
+.payment-option input {
+    margin-right: 8px;
+}
+
+.payment-option i {
+    color: #ff7a00;
+    margin-right: 5px;
+}
+
+
+/* PAYMENT FORM */
+
+.payment-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* PAY BUTTON */
+
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff7a00;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pay-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* SECURE TEXT */
+
+.secure-text {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.secure-text i {
+    color: #ff7a00;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .payment-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .payment-info {
+        text-align: center;
+    }
+
+    .payment-info > p {
+        margin: auto;
+    }
+
+    .payment-features div {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .payment-section {
+        padding: 110px 5% 50px;
+    }
+
+    .payment-info h1 {
+        font-size: 34px;
+    }
+
+    .payment-box {
+        padding: 20px;
+    }
+
+    .payment-options {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* PAYMENT METHOD HIDE / SHOW */
+
+.payment-hidden {
+    display: none;
+}
+
+.payment-message {
+    color: #aaaaaa;
+    text-align: center;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.cash-message {
+    color: #ff7a00;
+    font-size: 15px;
+}
+
+.cash-message i {
+    margin-right: 8px;
+}
+
+/* =================================
+   CONFIRMATION PAGE
+================================= */
+
+.confirmation-section {
+    min-height: 100vh;
+    padding: 130px 20px 70px;
+    background: #080808;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CONFIRMATION BOX */
+
+.confirmation-box {
+    width: 100%;
+    max-width: 650px;
+
+    background: #151515;
+
+    border: 1px solid #2a2a2a;
+    border-radius: 18px;
+
+    padding: 40px;
+
+    text-align: center;
+}
+
+
+/* SUCCESS ICON */
+
+.success-icon {
+    font-size: 70px;
+    color: #ff7a00;
+
+    margin-bottom: 15px;
+}
+
+
+/* SMALL TITLE */
+
+.confirmation-box .small-title {
+    color: #ff7a00;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+/* MAIN HEADING */
+
+.confirmation-box h1 {
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.confirmation-box h1 span {
+    color: #ff7a00;
+}
+
+
+/* MESSAGE */
+
+.confirmation-message {
+    color: #aaaaaa;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* BOOKING DETAILS BOX */
+
+.confirmation-details {
+    background: #0d0d0d;
+
+    border: 1px solid #333;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    text-align: left;
+}
+
+
+.confirmation-details h2 {
+    color: #ff7a00;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+
+/* DETAILS */
+
+.confirmation-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 5px;
+
+    border-bottom: 1px solid #2a2a2a;
+
+    color: #cccccc;
+}
+
+
+.confirmation-item:last-child {
+    border-bottom: none;
+}
+
+
+.confirmation-item strong {
+    color: white;
+
+    text-align: right;
+}
+
+
+/* SUCCESS MESSAGE */
+
+.success-message {
+    margin-top: 20px;
+
+    padding: 14px;
+
+    background: #111;
+
+    border: 1px solid #ff7a00;
+
+    border-radius: 8px;
+
+    color: #ff7a00;
+
+    font-size: 14px;
+}
+
+
+.success-message i {
+    margin-right: 8px;
+}
+
+
+/* BUTTONS */
+
+.confirmation-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.home-btn,
+.cars-btn {
+    text-decoration: none;
+
+    padding: 13px 22px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* HOME BUTTON */
+
+.home-btn {
+    background: #ff7a00;
+
+    color: white;
+}
+
+
+.home-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* CARS BUTTON */
+
+.cars-btn {
+    border: 1px solid #ff7a00;
+
+    color: #ff7a00;
+}
+
+
+.cars-btn:hover {
+    background: #ff7a00;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .confirmation-section {
+        padding: 110px 15px 50px;
+    }
+
+
+    .confirmation-box {
+        padding: 25px 18px;
+    }
+
+
+    .confirmation-box h1 {
+        font-size: 26px;
+    }
+
+
+    .success-icon {
+        font-size: 55px;
+    }
+
+
+    .confirmation-item {
+        font-size: 13px;
+
+        gap: 10px;
+    }
+
+
+    .confirmation-buttons {
+        flex-direction: column;
+    }
+
+
+    .home-btn,
+    .cars-btn {
+        width: 100%;
+    }
+
+}
+
+/* =================================
+   DIGITAL MARKETING PAGE
+================================= */
+
+/* HERO SECTION */
+
+.marketing-hero {
+    min-height: 85vh;
+    padding: 140px 8% 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.95)
+    );
+}
+
+.marketing-hero-content {
+    max-width: 850px;
+}
+
+.small-title {
+    color: #ff7a00;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.marketing-hero h1 {
+    color: white;
+    font-size: 55px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.marketing-hero h1 span {
+    color: #ff7a00;
+}
+
+.marketing-hero p {
+    color: #aaaaaa;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+.marketing-btn {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 14px 25px;
+
+    background: #ff7a00;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+.marketing-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* INTRODUCTION */
+
+.marketing-intro {
+    padding: 90px 8%;
+    background: #0d0d0d;
+}
+
+.intro-content {
+    max-width: 1200px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: center;
+}
+
+.intro-text h3 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    color: #aaaaaa;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* MARKETING GOALS */
+
+.marketing-goals {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.goal-card {
+    background: #151515;
+
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+
+    padding: 20px;
+}
+
+.goal-card i {
+    color: #ff7a00;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.goal-card h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.goal-card p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+
+/* STRATEGIES */
+
+.strategies-section {
+    padding: 90px 8%;
+    background: #080808;
+}
+
+.strategy-grid {
+    max-width: 1200px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.strategy-card {
+    background: #151515;
+
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.strategy-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff7a00;
+}
+
+.strategy-icon {
+    width: 55px;
+    height: 55px;
+
+    background: #0d0d0d;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.strategy-icon i {
+    color: #ff7a00;
+    font-size: 23px;
+}
+
+.strategy-card h3 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.strategy-card p {
+    color: #aaaaaa;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.strategy-card span {
+    display: block;
+
+    color: #ff7a00;
+
+    font-size: 12px;
+
+    margin-top: 15px;
+}
+
+
+/* SPECIAL OFFERS */
+
+.offers-section {
+    padding: 90px 8%;
+    background: #0d0d0d;
+}
+
+.offers-grid {
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.offer-card {
+    text-align: center;
+
+    background: #151515;
+
+    border-radius: 12px;
+
+    padding: 35px 25px;
+
+    border: 1px solid #2a2a2a;
+}
+
+.offer-card i {
+    font-size: 40px;
+    color: #ff7a00;
+}
+
+.offer-card h3 {
+    color: white;
+    margin: 18px 0 10px;
+}
+
+.offer-card p {
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+.offer-card button {
+    margin-top: 20px;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #ff7a00;
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* CUSTOMER JOURNEY */
+
+.journey-section {
+    padding: 90px 8%;
+    background: #080808;
+}
+
+.journey-steps {
+    max-width: 1200px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.journey-step {
+    position: relative;
+
+    text-align: center;
+
+    background: #151515;
+
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+
+    padding: 30px 20px;
+}
+
+.step-number {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.journey-step > i {
+    font-size: 32px;
+    color: #ff7a00;
+
+    margin-bottom: 15px;
+}
+
+.journey-step h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.journey-step p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* EXPECTED RESULTS */
+
+.results-section {
+    padding: 90px 8%;
+    background: #0d0d0d;
+}
+
+.results-grid {
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.result-card {
+    text-align: center;
+
+    padding: 30px 15px;
+
+    background: #151515;
+
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+}
+
+.result-card i {
+    font-size: 30px;
+    color: #ff7a00;
+}
+
+.result-card h2 {
+    color: white;
+    margin: 15px 0 5px;
+}
+
+.result-card p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+
+/* CTA SECTION */
+
+.marketing-cta {
+    padding: 100px 8%;
+
+    text-align: center;
+
+    background: #151515;
+}
+
+.marketing-cta h2 {
+    color: white;
+    font-size: 35px;
+}
+
+.marketing-cta h2 span {
+    color: #ff7a00;
+}
+
+.marketing-cta p {
+    color: #aaaaaa;
+    margin: 15px auto;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .marketing-hero h1 {
+        font-size: 40px;
+    }
+
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .strategy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .marketing-hero {
+        padding: 120px 5% 60px;
+    }
+
+    .marketing-hero h1 {
+        font-size: 32px;
+    }
+
+    .marketing-hero p {
+        font-size: 15px;
+    }
+
+    .marketing-intro,
+    .strategies-section,
+    .offers-section,
+    .journey-section,
+    .results-section {
+        padding: 70px 5%;
+    }
+
+    .strategy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .marketing-cta {
+        padding: 70px 5%;
+    }
+
+    .marketing-cta h2 {
+        font-size: 28px;
+    }
+
+}
+
+/* =================================
+   OFFER APPLIED BOX
+================================= */
+
+.offer-box {
+    display: none;
+
+    align-items: center;
+    gap: 10px;
+
+    background: #1a1a1a;
+
+    border: 1px solid #ff7a00;
+
+    color: #ff7a00;
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+.offer-box i {
+    font-size: 20px;
+}
